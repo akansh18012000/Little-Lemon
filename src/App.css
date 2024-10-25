@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
 header,footer {
   margin: 0 20%;
   padding: 20px 0;
@@ -56,7 +61,7 @@ nav ul li a {
 }
 
 .homepage-banner-text h1 {
-  font-size: 40px;
+  text-align: left;
   color: #c3a510;
 }
 
@@ -70,7 +75,7 @@ nav ul li a {
   margin-top: 8px;
 }
 
-.homepage-banner-text button {
+.homepage-banner-text button, form button {
   background-color: #F4CE14;
   padding: 10px 20px;
   font-size: 24px;
@@ -182,4 +187,47 @@ nav ul li a {
 .card-cta-container img {
   width: 20px;
   height: 20px;
+}
+
+/* BookingsForm.css */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}
+
+.bookings-form {
+  min-height: calc(100vh - 216px);
 }
